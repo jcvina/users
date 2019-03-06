@@ -12,7 +12,7 @@ public class ApiError
 	private HttpStatus status;
 	
 	@JsonProperty
-	private LocalDateTime timeStamp;
+	private LocalDateTime timestamp;
 	
 	@JsonProperty
 	private String code;
@@ -26,7 +26,7 @@ public class ApiError
 	
 	private ApiError()
 	{
-		timeStamp = LocalDateTime.now();
+		timestamp = LocalDateTime.now();
 	}
 	
 	public ApiError(HttpStatus status)
@@ -69,12 +69,12 @@ public class ApiError
 	}
 	
 
-	public LocalDateTime getTimeStamp() {
-		return timeStamp;
+	public LocalDateTime getTimestamp() {
+		return timestamp;
 	}
 
-	public void setTimeStamp(LocalDateTime timeStamp) {
-		this.timeStamp = timeStamp;
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
 	}
 	
 
