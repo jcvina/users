@@ -1,0 +1,26 @@
+spring:
+  profiles: local
+  datasource:
+    #generate-unique-name: true
+    platform: hsqldb
+#    initialize: true
+    #initialization-mode: embedded 
+    continue-on-error: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+    #database-platform: 
+    #generate-ddl: true
+    show-sql: true
+  data:
+    mongodb:
+      port: 0
+  boot:
+    admin:
+      client:
+        url: http://localhost:3306/users
+        username: root
+        password: 
+server:
+    port: 8087
